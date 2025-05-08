@@ -1,9 +1,9 @@
 import React, { useRef, useState } from 'react';
-import { View, Text, TextInput, Button, StyleSheet, PanResponder } from 'react-native';
+import { Button, PanResponder, StyleSheet, Text, TextInput, View } from 'react-native';
 import { io, Socket } from 'socket.io-client';
 
 const TOUCHPAD_SIZE = 300;
-const PC_WIDTH = 1920; // Zmień na swoją rozdzielczość!
+const PC_WIDTH = 1920; 
 const PC_HEIGHT = 1080;
 
 export default function TouchpadScreen() {
@@ -12,7 +12,7 @@ export default function TouchpadScreen() {
   const [connected, setConnected] = useState(false);
   const [touchPos, setTouchPos] = useState({ x: TOUCHPAD_SIZE / 2, y: TOUCHPAD_SIZE / 2 });
 
-  // Połącz z backendem
+  // Połączenie z backendem
   const connectSocket = () => {
     if (socketRef.current) socketRef.current.disconnect();
     socketRef.current = io(`http://${ip}:5000`, {
@@ -29,7 +29,7 @@ export default function TouchpadScreen() {
     });
   };
 
-  // Wyślij pozycję kursora
+  // Wysyłanie pozycji kursora
   const sendPosition = (x: number, y: number) => {
     if (!socketRef.current?.connected) return;
     const pcX = Math.round((x / TOUCHPAD_SIZE) * PC_WIDTH);
