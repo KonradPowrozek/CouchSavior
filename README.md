@@ -16,7 +16,6 @@ Pomysł na projekt wpadł podczas własnych odczuć podczas oglądania seriali.
 - [Uruchamianie](#uruchamianie)
 - [Konfiguracja](#konfiguracja)
 - [Zrzuty ekranu](#zrzuty-ekranu)
-- [Autor](#autor)
 
 ---
 
@@ -119,5 +118,6 @@ Skanuj kod QR aplikacją **Expo Go** na telefonie.
 
 ## Zrzuty ekranu
 
-![image](https://github.com/user-attachments/assets/e25662da-fc1a-4093-962c-da91eeec0871)
+![image](https://github.com/user-attachments/assets/4f4e53f4-4edf-411a-9f26-5769e9bc43ae)
+
 
